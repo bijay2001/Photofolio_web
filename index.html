@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>PhotoFolio Website</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="name">
+                <box-icon name='camera' color='#14da12'></box-icon>
+                <span id="text">
+                    <p>PhotoFolio</p>
+                </span>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="icon">
+                <a href="#"><box-icon name='twitter' type='logo' color="#f0f3f1"></box-icon></a>
+                <a href="#"><box-icon name='instagram' type='logo' color="#f0f3f1"></box-icon></a>
+                <a href="#"><box-icon type='logo' name='facebook-circle' color="#f0f3f1"></box-icon></a>
+                <a href="#"><box-icon type='logo' name='linkedin-square' color="#f0f3f1"></box-icon></a>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="textitem">
+            <h2>I'm <span id="jenny">Jenny Wilson</span> a <br> Professional Photographer <br> from New York City.
+            </h2>
+            <p>Blanditiis praesentium aliquam illum tempore incidunt debitis <br> dolorem magni est deserunt sed qui
+                libero. Qui voluptas amet.</p>
+            <button class="btn">AVAILABLE FOR HIRE</button>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="images">
+            <img src="images/8.jpg" onclick="model('images/8.jpg')" alt="image1">
+        </div>
+        <div class="images">
+            <img src="images/11.jpg" onclick="model('images/11.jpg')" alt="image2">
+        </div>
+        <div class="images">
+            <img src="images/10.jpg" onclick="model('images/10.jpg')" alt="image3">
+        </div>
+        <div class="images">
+            <img src="images/11.jpg" onclick="model('images/11.jpg')" alt="image4">
+        </div>
+        <div class="images">
+            <img src="images/8.jpg" onclick="model('images/8.jpg')" alt="image5">
+        </div>
+        <div class="images">
+            <img src="images/11.jpg" onclick="model('images/11.jpg')" alt="image6">
+        </div>
+        <div class="images">
+            <img src="images/10.jpg" onclick="model('images/10.jpg')" alt="image7">
+        </div>
+        <div class="images">
+            <img src="images/11.jpg" onclick="model('images/11.jpg')" alt="image8">
+        </div>
+        <div class="images">
+            <img src="images/img1.png" onclick="model('images/img1.png')" alt="image9">
+        </div>
+        <div class="images">
+            <img src="images/img2.png" onclick="model('images/img2.png')" alt="image10">
+        </div>
+        <div class="images">
+            <img src="images/8.jpg" onclick="model('images/8.jpg')" alt="image11">
+        </div>
+        <div class="images">
+            <img src="images/11.jpg" onclick="model('images/11.jpg')" alt="image12">
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+    </section>
+    <footer>
+        <hr>
+        <div class="foot">
+            <p>&copy;Copyright 2024.All Right Reserved</p>
+            <p>Designed By &copy;Bijay Kumar Behera</p>
+        </div>
+
+    </footer>
+</body>
+<script>
+    function model(imageSrc) {
+        document.getElementById("myModal").style.display = "block";
+        document.getElementById("modalImage").src = imageSrc;
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+</script>
+</html>

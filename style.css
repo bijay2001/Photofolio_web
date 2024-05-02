@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    text-decoration: none; 
+    list-style-type: none;
+}
+body{
+    background: black;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;  
+}
+.navbar {
+    height: 70px;
+    padding: 10px;
+    gap: 100px;
+    display: flex;
+    background:black;
+    
+}
+
+.name {
+    display: flex;
+    color: white;
+}
+
+#text {
+    margin-left: 10px;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.links ul {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    font-weight: bold;
+    margin-left: 150px;
+   
+
+}
+a {
+    color: rgb(206, 198, 198);
+}
+
+a:hover {
+    color: white;
+}
+
+.icon {
+    margin-left: 300px;
+    display: flex;
+    gap: 5px;
+}
+
+.hero {
+    height: 350px;
+}
+
+.textitem {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-size: x-large;
+    margin-top: 150px;
+
+}
+.textitem p{
+    color: wheat;
+    font-size: 20px;
+}
+
+#jenny {
+    background-color: rgb(20, 163, 127);
+}
+
+.btn {
+    padding: 15px;
+    background: rgb(20, 165, 129);
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px ;
+    gap: 30px;
+    padding: 30px;
+    background: black;
+}
+
+.gallery {
+    overflow: hidden;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.images{
+    transition: .2s linear;
+}
+.images:hover{
+    transform:scale(1.1);
+}
+.foot{
+    color: white;
+    padding: 20px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+@media screen and (max-width:480px){
+    
+    body{
+        background: rgb(6, 49, 6);
+    }
+}
